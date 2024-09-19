@@ -4,7 +4,7 @@
 
 .sliderLayoutContainer--carousel {
   background-color: #F0F0F0;
-  min-height: 450px;
+  min-height: auto;
 }
 
 .sliderTrackContainer {
@@ -20,12 +20,76 @@
   margin-top: 20px;
   margin-bottom: 20px;
   max-width: 96rem;
-  min-height: 550px;
 }
 
 .slide--shelf {
   margin-bottom: 25px;
   padding-left: .5rem;
   padding-right: .5rem;
-  min-height: 550px;
+}
+ 
+
+.sliderRightArrow .caretIcon,
+.sliderLeftArrow .caretIcon {
+  display: none;
+}
+
+@media screen and (min-width: 1025px) {
+  .sliderLayoutContainer--shelf .sliderRightArrow .caretIcon,
+  .sliderLayoutContainer--shelf .sliderLeftArrow .caretIcon {
+    display: initial;
+  }
+
+  .sliderLayoutContainer--shelf .sliderLeftArrow::after,
+  .sliderLayoutContainer--shelf .sliderRightArrow::after {
+    content: "";
+  }
+
+  
+}
+
+.sliderLeftArrow::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='13' viewBox='0 0 8 13' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.69586 6.59285L6.99542 11.1721L6.22776 11.9284L1.18293 6.59285L6.22776 1.4728L6.99542 2.22918L2.69586 6.59285Z' fill='black' stroke='black'/%3E%3C/svg%3E");
+}
+
+.sliderRightArrow::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='13' viewBox='0 0 8 13' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.00433 6.80827L0.704772 2.22907L1.47244 1.47268L6.51727 6.80827L1.47244 11.9283L0.704774 11.1719L5.00433 6.80827Z' fill='black' stroke='black'/%3E%3C/svg%3E");
+}
+
+@media screen and (min-width: 1025px) {
+  .sliderRightArrow--news__carousel,
+  .sliderLeftArrow--news__carousel {
+    display: none;
+  }
+
+  .sliderLayoutContainer--news__carousel {
+    max-width: 1330px;
+    margin: auto;
+  }
+}
+
+.slideChildrenContainer--shelf :global(.vtex-button) {
+  border-radius: 5px;
+  background: #000;
+  color: #FFF;
+  text-align: center;
+  font-family: Exo;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: unset;
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 1025px) {
+  .slideChildrenContainer--shelf :global(.vtex-button) {
+    font-size: 18px;
+  }
+}
+
+.sliderLayoutContainer--shelf {
+  padding: 0 !important;
+  max-width: 1330px;
+  margin: auto;
 }

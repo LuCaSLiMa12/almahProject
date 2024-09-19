@@ -21,14 +21,15 @@
   border-color:#dbe9fd;
 }
 
-.flexCol--productRating {
-  margin-bottom: 3rem;
-}
-
 .flexCol--summaryDetailsListMobile {
   justify-content: space-between;
 }
 
 .flexCol--summaryUpDetailsListMobile {
   margin-bottom: 0.25rem
+}
+
+.flexCol--productRating,
+.flexColChild--productRating {
+  height: auto !important;
 }

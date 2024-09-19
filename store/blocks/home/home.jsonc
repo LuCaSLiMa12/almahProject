@@ -2,17 +2,74 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "flex-layout.row#deals",
       "__fold__",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "image#home-news",
+      "slider-layout#news",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
+      "flex-layout.row#mosaico",
+      "flex-layout.row#slide-social-midia",
+      "flex-layout.row#newsletter"
     ]
+  },
+
+  "flex-layout.row#mosaico": {
+    "children": [
+      "flex-layout.col#mosaico",
+      "flex-layout.col#mosaico",
+      "flex-layout.col#mosaico",
+      "flex-layout.col#mosaico",
+      "flex-layout.col#mosaico"
+    ],
+    "props": {
+      "blockClass": "mosaico-home"
+    }
+  },
+
+  "flex-layout.col#mosaico": {
+    "children": ["image#mosaico"]
+  },
+
+  "flex-layout.row#slide-social-midia": {
+    "children": [
+      "flex-layout.col#slide-social-midia",
+      "flex-layout.col#slide-social-midia",
+      "flex-layout.col#slide-social-midia",
+      "flex-layout.col#slide-social-midia"
+    ],
+    "props": {
+      "blockClass": "carousel__social-midia"
+    }
+  },
+
+  "flex-layout.col#slide-social-midia": {
+    "children": ["image#home-social-midia", "rich-text#slide-social-midia", "rich-text#subtitle__slide-social-midia"],
+    "props": {
+      "blockClass": "container__slide-social-midia"
+    }
+  },
+
+  "image#home-social-midia": {
+    "props": {
+      "src": "assets/imgs/instaHome.svg"
+    }
+  },
+
+  "rich-text#slide-social-midia": {
+    "props": {
+      "text": "Siga a [@PERFIL](/ig) no instagram",
+      "blockClass": "slide-social-midia"
+    }
+  },
+
+  "rich-text#subtitle__slide-social-midia": {
+    "props": {
+      "text": "Fique por dentro das novidades, promoções e muito mais",
+      "blockClass": "subtitle__slide-social-midia"
+    }
   },
 
   "list-context.image-list#demo": {
@@ -23,11 +80,11 @@
       "images": [
         {
           "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+          "mobileImage": "assets/imgs/banner-mobile.jpg"
         },
         {
           "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
+          "mobileImage": "assets/imgs/banner-mobile.jpg"
         }
       ]
     }
@@ -40,20 +97,81 @@
         "phone": 1
       },
       "infinite": true,
-      "showNavigationArrows": "desktopOnly",
+      "showNavigationArrows": "never",
       "blockClass": "carousel"
     }
   },
 
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
+      "text": "## Estante",
       "blockClass": "shelfTitle"
     }
   },
   "flex-layout.row#shelf": {
     "children": ["list-context.product-list#demo1"]
   },
+
+  "slider-layout#news": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": "news__carousel"
+    },
+    "children": [
+      "flex-layout.row#new",
+      "flex-layout.row#new",
+      "flex-layout.row#new",
+      "flex-layout.row#new"
+    ]
+  },
+
+  "flex-layout.row#new": {
+    "children": [
+      "image#news-img",
+      "rich-text#news-title",
+      "rich-text#news-summary"
+    ],
+    "props": {
+      "blockClass": "container__news"
+    }
+  },
+
+  "image#news-img": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "blockClass": "news_imgs"
+    }
+  },
+
+  "rich-text#news-title": {
+    "props": {
+      "text": "nome do artigo",
+      "blockClass": "news_title"
+    }
+  },
+
+  "rich-text#news-summary": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi id urna non urna vestibulum dapibus porta eu turpis. Praesent tempor justo vel mi finibus facilisis.",
+      "blockClass": "news_cummary"
+    }
+  },
+
+
+  "flex-layout.row#newsletter": {
+    "children": ["rich-text#newsletter-title", "newsletter-form"],
+    "props": {
+      "blockClass": "container__newsletter"
+    }
+  },
+
   "list-context.product-list#demo1": {
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
@@ -64,13 +182,28 @@
   "slider-layout#demo-products": {
     "props": {
       "itemsPerPage": {
-        "desktop": 4,
+        "desktop": 3,
         "tablet": 3,
-        "phone": 1
+        "phone": 2
       },
       "infinite": true,
       "fullWidth": false,
-      "blockClass": "shelf"
+      "blockClass": "shelf",
+      "showPaginationDots": "never"
+    }
+  },
+
+  "image#mosaico": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "blockClass": "info-card-home"
+    }
+  },
+
+  "image#home-news": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "blockClass": ["info-card-home", "home-news"]
     }
   },
 
@@ -99,6 +232,32 @@
     "props": {
       "text": "\n**Reach us at**\nwww.vtex.com.br",
       "blockClass": "link"
+    }
+  },
+  "rich-text#newsletter-title": {
+    "props": {
+      "text": "## Deixe seu contato e fique por dentro das novidades!",
+      "blockClass": "newsletter-title"
+    }
+  },
+
+  "newsletter-form": {
+    "children": [
+      "newsletter-input-name",
+      "newsletter-input-email",
+      "newsletter-submit"
+    ]
+  },
+  
+  "newsletter-input-email": {
+    "props": {
+      "placeholderText": "E-Mail"
+    }
+  },
+
+  "newsletter-submit": {
+    "props": {
+      "submitButtonLabel": "ENVIAR"
     }
   }
 }

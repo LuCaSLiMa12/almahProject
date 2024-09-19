@@ -23,13 +23,15 @@
 }
 
 .flexRowContent--main-header {
-  background-color: #f0f0f0;
+  background-color: #fff;
 }
 
 .flexRowContent--main-header-mobile {
   align-items: center;
-  padding: 0.625rem 0.5rem;
-  background-color: #f0f0f0;
+  padding: 0.375rem 1rem 0.938rem;
+  background-color: #fff;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
@@ -43,8 +45,18 @@
 }
 
 .flexRow--deals {
-  background-color: #0F3E99;
-  padding: 14px 0px;
+  background-color: #fff;
+  padding: 7px 0px;
+}
+
+@media screen and (min-width: 1025px) {
+  .flexRow--deals {
+    max-width: 986px;
+    margin: auto;
+    padding: 25px 0px;
+
+  }
+
 }
 
 .flexRow--deals .stretchChildrenWidth {
@@ -95,4 +107,289 @@
 
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
+}
+
+.flexRow--container__newsletter {
+  background: #1E1E1E;
+  padding: 1.375rem 0 1.813rem;
+}
+
+@media screen and (min-width: 1025px) {
+  .flexRow--container__newsletter {
+    background: #1E1E1E;
+    padding: 24px 0 35px;
+  }
+}
+
+.flexRow--container__links_and_social-midias {
+  background-color: #000;
+  margin-top: 0.438rem;
+  padding: 2.625rem 1rem;
+}
+
+.flexRow--container__about-us {
+  justify-content: center;
+  display: flex;
+}
+
+.flexRowContent--container__about-us  {
+  width: fit-content;
+}
+
+.flexColChild--payment-methods {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.flexRowContent--container__social-midia {
+  display: flex;
+  gap: 8px;
+}
+
+.flexRowContent--container__footer-logo  {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5.813rem;
+  gap: 16px;
+}
+
+.flexColChild--container__slide-social-midia {
+  height: auto !important;
+}
+
+@media screen and (min-width: 1025px) {
+  .flexColChild--container__slide-social-midia :global(.vtex-store-components-3-x-imageElement) {
+    width: 78px;
+  }
+}
+
+.flexCol--container__slide-social-midia  {
+  width: 232px !important;
+  height: 232px;
+  background: #F3F3F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  border-radius: 12px;
+}
+
+@media screen and (min-width: 1025px) {
+  .flexCol--container__slide-social-midia  {
+    width: 313px !important;
+    height: 313px;
+  }
+}
+
+.flexRowContent--carousel__social-midia {
+  display: flex;
+  gap: 13px;
+  overflow: scroll;
+  margin-bottom: 33px;
+}
+
+@media screen and (min-width: 1025px) {
+  .flexRowContent--carousel__social-midia {
+    gap: 26px;
+    margin-bottom: 81px;
+  }
+  .flexRowContent--carousel__social-midia .stretchChildrenWidth {
+    width: auto !important;
+  }
+}
+
+
+.flexRowContent--carousel__social-midia::-webkit-scrollbar {
+  display: none;
+}
+
+.flexRow--carousel__social-midia {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 1025px) {
+  .flexRow--carousel__social-midia {
+    margin: 95px auto;
+    max-width: 1330px;
+  }
+}
+
+.flexRow--mosaico-home :global(.vtex-store-components-3-x-container) {
+  padding: 0;
+}
+
+@media screen and (min-width: 1025px) {
+  .flexRow--mosaico-home {
+    max-width: 1330px;
+    margin: auto;
+  }
+}
+
+.flexRowContent--mosaico-home  {
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media screen and (min-width: 640px) {
+  .flexRowContent--mosaico-home  {
+    gap: 24px 28px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+
+  .flexRowContent--mosaico-home .stretchChildrenWidth {
+    width: 24.6vw !important;
+  }
+
+  .flexRowContent--mosaico-home .stretchChildrenWidth:nth-child(-n+2) {
+    max-width: 48.94%;
+    width: 42.38vw !important;
+  }
+  
+}
+
+.flexRowContent--container__news {
+  width: 87%;
+  margin: 28px auto 44px;
+  flex-direction: column;
+
+}
+
+.flexRowContent--container__news .stretchChildrenWidth {
+  width: auto !important;
+}
+
+@media screen and (min-width: 1025px) {
+
+  .flexRowContent--container__news {
+    width: 100%;
+    margin: 28px auto 44px;
+  }
+
+
+
+  .flexRow--container__news :global(.vtex-store-components-3-x-container) {
+    padding-right: .8rem;
+  }
+}
+
+.flexRow--deals :global(.vtex-store-components-3-x-container) {
+  padding: 0;
+}
+
+.flexRowContent--deals {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll hidden;
+}
+
+@media screen and (min-width: 1025px) {
+  .flexRowContent--deals .stretchChildrenWidth {
+    border-right: 1px solid;
+  }
+  .flexRowContent--deals .stretchChildrenWidth:last-child {
+    border-right: unset;
+  }
+}
+
+.flexRowContent--deals::-webkit-scrollbar {
+  display: none;
+}
+
+.flexRowContent--deals .flexCol--deals-item {
+  width: 100vw;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.flexColChild--deals-item {
+  height: auto !important;
+}
+
+.flexColChild--deals-item :global(.vtex-store-components-3-x-imageElement) {
+  width: 48px;
+  height: 49px;
+  max-height: unset !important;
+}
+
+.flexRowContent--main-header-mobile {
+  border-top: 7px solid;
+}
+
+.flexRowContent--container__about-us .flexColChild,
+.flexRowContent--menu-row .flexColChild {
+  height: auto !important;
+}
+
+.flexRowContent--menu-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+}
+
+@media screen and (min-width: 1025px) {
+  .flexRowContent--menu-row {
+    padding-top: 39px !important;
+    padding-bottom: 50px !important;
+    max-width: 1330px;
+    margin: auto;
+    justify-content: space-between;
+  }
+
+
+
+  .flexRowContent--menu-row .stretchChildrenWidth {
+    width: auto !important;
+  }
+
+  .flexCol--header_desk {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1rem;
+  }
+
+  .flexColChild--header_desk {
+    height: auto !important;
+  }
+
+  .flexRowContent--container__newsletter {
+    max-width: 1330px;
+    margin: auto;
+    justify-content: space-between;
+  }
+
+  .flexRowContent--container__newsletter .stretchChildrenWidth {
+    width: auto !important;
+  }
+}
+
+.flexRowContent--container__social-midia {
+  max-width: 147px;
+}
+
+.flexCol--menu-midia {
+  display: flex;
+  align-items: center;
+}
+
+.flexColChild--menu-midia {
+  height: auto !important;
+}
+
+@media screen and (min-width: 1025px) {
+  .flexColChild--menu-midia .flexRowContent {
+    gap: 10px;
+  }
+}
+
+.flexRow--menu-row {
+  padding: 0 1rem;
 }

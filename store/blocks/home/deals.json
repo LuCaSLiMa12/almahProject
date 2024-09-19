@@ -15,12 +15,15 @@
     "children": [
       "image#deal1",
       "rich-text#deal1"
-    ]
+    ],
+    "props": {
+      "blockClass": "deals-item"
+    }
   },
   "image#deal1": {
     "props": {
       "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
-      "maxHeight": "24px"
+      "maxHeight": "29px"
     }
   },
   "rich-text#deal1": {
@@ -33,12 +36,15 @@
     "children": [
       "image#deal2",
       "rich-text#deal2"
-    ]
+    ],
+    "props": {
+      "blockClass": "deals-item"
+    }
   },
   "image#deal2": {
     "props": {
       "src": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
-      "maxHeight": "24px"
+      "maxHeight": "29px"
     }
   },
   "rich-text#deal2": {
@@ -51,12 +57,15 @@
     "children": [
       "image#deal3",
       "rich-text#deal3"
-    ]
+    ],
+    "props": {
+      "blockClass": "deals-item"
+    }
   },
   "image#deal3": {
     "props": {
       "src": "https://storecomponents.vteximg.com.br/arquivos/store.png",
-      "maxHeight": "24px"
+      "maxHeight": "29px"
     }
   },
   "rich-text#deal3": {
@@ -69,12 +78,15 @@
     "children": [
       "image#deal4",
       "rich-text#deal4"
-    ]
+    ],
+    "props": {
+      "blockClass": "deals-item"
+    }
   },
   "image#deal4": {
     "props": {
       "src": "https://storecomponents.vteximg.com.br/arquivos/coupon.png",
-      "maxHeight": "24px"
+      "maxHeight": "29px"
     }
   },
   "rich-text#deal4": {

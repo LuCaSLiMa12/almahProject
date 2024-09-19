@@ -6,12 +6,17 @@
 
 .container--shelfTitle {
   color: #727273;
-  justify-content: center;
+  justify-content: left;
   text-align: center;
+  margin-left: 1rem;
+  max-width: 1330px;
+  padding: 0 1rem;
 }
 
-.headingLevel2--shelfTitle {
-  font-weight: 200;
+@media screen and (min-width: 1025px) {
+  .container--shelfTitle {
+    margin: auto;
+  }
 }
 
 .container--deals .paragraph {
@@ -86,5 +91,158 @@
 
   .container--title .paragraph {
     line-height: 1.3em;
+  }
+}
+
+.heading--newsletter-title {
+  color: #FFF;
+  font-family: Exo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  max-width: 251px;
+  text-align: center;
+  margin-bottom: 19px;
+}
+
+@media screen and (min-width: 1025px) {
+  .heading--newsletter-title {
+    max-width: 100%;
+    margin-bottom: 0;
+    padding: 0 1rem 0 0;
+  }
+}
+
+.container--newsletter-title {
+  justify-content: center;
+  align-items: center;
+}
+
+
+.paragraph--content__footer-item-title {
+  color: #FFF;
+  text-align: center;
+  font-family: Exo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.paragraph--content__footer-item-title-payment {
+  margin: 2.25rem 0 0.438rem;
+}
+
+@media screen and (min-width: 1025px) {
+  .paragraph--content__footer-item-title-payment {
+    margin: 0;
+    text-transform: uppercase;
+  }
+}
+
+.paragraph--content__footer-item-title-social-midia {
+  margin: 2.563rem 0 1.438rem;
+}
+
+@media screen and (min-width: 1025px) {
+  .paragraph--content__footer-item-title-social-midia {
+    margin: 0 0 20px;
+    text-transform: uppercase;
+  }
+}
+
+.paragraph--footer {
+  margin: 0;
+  min-width: 87px;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.paragraph--subtitle__slide-social-midia {
+  color: #3F3356;
+  text-align: center;
+  font-family: Exo;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.993px;
+  margin: 0;
+}
+
+.paragraph--slide-social-midia {
+  color: #3F3356;
+  text-align: center;
+  font-family: Exo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20.883px; 
+  margin: 27px 0 10px;
+}
+
+
+.link--slide-social-midia {
+  color: #D80039;
+  text-decoration: none;
+}
+
+.paragraph--news_cummary {
+  color: #515151;
+  font-family: Exo;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px; 
+  margin: 0;
+}
+
+@media screen and (min-width: 1025px) {
+  .paragraph--slide-social-midia {
+    font-size: 22px;
+  }
+  .paragraph--subtitle__slide-social-midia {
+    margin-top: 9px;
+    font-size: 16px;
+  }
+}
+
+.paragraph--news_title {
+  color: #000;
+  font-family: Exo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 15px 0 15px;
+}
+
+.paragraph--deals {
+  color: #000;
+  font-family: Exo;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.headingLevel2--shelfTitle {
+  color: #000;
+  font-family: Exo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1025px) {
+  .headingLevel2--shelfTitle {
+    font-size: 30px;
   }
 }

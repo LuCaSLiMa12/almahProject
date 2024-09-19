@@ -5,13 +5,15 @@
 }
 
 .inlineContainer {
-  margin-left: 0rem;
+  display: flex;
+  justify-content: end;
 }
 
 .star--filled {
-  color: #FFB100;
+  color: #000;
 }
 
 .star--empty {
-  color: #FFB100;
+  color: #000;
 }
+

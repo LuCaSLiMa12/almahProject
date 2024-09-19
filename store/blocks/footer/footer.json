@@ -4,26 +4,62 @@
   },
   "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#footer-1-desktop",
-      "flex-layout.row#footer-2-desktop",
-      "flex-layout.row#footer-3-desktop"
-    ]
+      "flex-layout.row#footer-1-desktop"
+    ],
+    "props": {
+      "blockClass": "footer-desk"
+    }
   },
   "flex-layout.row#footer-1-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-clothing",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
-      "social-networks"
+      "flex-layout.col#footer-1-desktop",
+      "flex-layout.col#about-us",
+      "flex-layout.col#service",
+      "flex-layout.col#online-service",
+      "flex-layout.col#footer-3-desktop",
+      "flex-layout.col#footer-2-desktop"
     ],
     "props": {
-      "blockClass": "menu-row",
-      "paddingTop": 6,
-      "paddingBottom": 3
+      "blockClass": "menu-row"
     }
   },
+  
+  "flex-layout.col#footer-1-desktop": {
+    "children": [
+      "rich-text#social-midia",
+      "flex-layout.row#links-socil-midia"
+    ],
+    "props": {
+      "blockClass": "menu-midia"
+    }
+  },
+
+  "flex-layout.col#footer-2-desktop": {
+    "children": [
+      "rich-text#payment-methods",
+      "image#payment-methods",
+      "flex-layout.row#powered-by-desk"
+    ],
+    "props": {
+      "blockClass": "menu-midia"
+    }
+  },
+
+  "flex-layout.col#footer-3-desktop": {
+    "children": [
+     "rich-text#secuty",
+      "flex-layout.row#secury-desk"
+    ],
+    "props": {
+      "blockClass": "menu-midia"
+    }
+  },
+
+  "flex-layout.row#secury-desk": {
+    "children": ["image#payment-methods", "image#secury"]
+  },
+
+  
 
   "social-networks": {
     "props": {
@@ -80,26 +116,147 @@
     ]
   },
   "flex-layout.row#2-footer-mobile": {
-    "children": ["flex-layout.col#footer-1-mobile"],
+    "children": ["flex-layout.row#about-us", "flex-layout.col#footer-1-mobile"],
     "props": {
-      "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "paddingBottom": 4
+      "blockClass": "container__links_and_social-midias"
     }
   },
+
+  "flex-layout.row#about-us": {
+    "children": ["flex-layout.col#about-us"],
+    "props": {
+      "blockClass": "container__about-us"
+    }
+  },
+
+  "flex-layout.col#about-us": {
+    "children": [
+      "link.product#about-us",  
+      "link.product#what-we-do",
+      "link.product#our-mission",
+      "link.product#our-stores"
+    ]
+  },
+  "flex-layout.col#service": {
+    "children": [
+      "link.product#about-us",  
+      "link.product#what-we-do",
+      "link.product#our-mission",
+      "link.product#our-stores"
+    ]
+  },
+  "flex-layout.col#online-service": {
+    "children": [
+      "link.product#about-us",  
+      "link.product#what-we-do",
+      "link.product#our-mission",
+      "link.product#our-stores"
+    ]
+  },
+
+  "link.product#about-us": {
+    "props": {
+      "href": "/about-us",
+      "label": "Sobre Nós",
+      "blockClass": ["content__useful-links", "content__useful-links-title"]
+    }
+  },
+
+  "link.product#what-we-do": {
+    "props": {
+      "href": "/what-we-do",
+      "label": "O Que Fazemos",
+      "blockClass": ["content__useful-links"]
+    }
+  },
+
+  "link.product#our-mission": {
+    "props": {
+      "href": "/our-mission",
+      "label": "Nossa Missão",
+      "blockClass": ["content__useful-links"]
+    }
+  },
+
+  "link.product#our-stores": {
+    "props": {
+      "href": "/our-stores",
+      "label": "Nossas Lojas",
+      "blockClass": ["content__useful-links"]
+    }
+  },
+
+  "image#payment-methods": {
+    "props": {
+      "src": "assets/imgs/payment-methods.svg"
+    }
+  },
+
+  "image#secury": {
+    "props": {
+      "src": "assets/imgs/payment-methods.svg"
+    }
+  },
+
   "flex-layout.col#footer-1-mobile": {
     "children": [
-      "accepted-payment-methods",
-      "social-networks",
-      "rich-text#footer-mobile"
+      "rich-text#payment-methods",
+      "image#payment-methods",
+      "rich-text#social-midia",
+      "flex-layout.row#links-socil-midia",
+      "flex-layout.row#powered-by"
     ],
     "props": {
-      "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "paddingBottom": 4,
-      "rowGap": 4
+      "blockClass": "payment-methods"
     }
   },
+
+  "flex-layout.row#powered-by": {
+    "children": ["rich-text#footer-mobile", "image#almah-logo-footer", "image#Vtex-logo-footer"],
+    "props": {
+      "blockClass": "container__footer-logo"
+    }
+  },
+  
+  "flex-layout.row#powered-by-desk": {
+    "children": ["rich-text#footer-mobile", "image#almah-logo-footer", "image#Vtex-logo-footer"],
+    "props": {
+      "blockClass": ["container__footer-logo", "container__footer-logo-desk"]
+    }
+  },
+
+
+  "image#almah-logo-footer": {
+    "props": {
+      "src": "assets/imgs/logo-footer.svg"
+    }
+  },
+
+  "image#Vtex-logo-footer": {
+    "props": {
+      "src": "assets/imgs/vtex-logo-footer.svg"
+    }
+  },
+
+  "flex-layout.row#links-socil-midia": {
+    "children": [
+      "image#social-midia-link", 
+      "image#social-midia-link", 
+      "image#social-midia-link", 
+      "image#social-midia-link"
+    ],
+    "props": {
+      "blockClass": "container__social-midia"
+    }
+  },
+
+  "image#social-midia-link": {
+    "props": {
+      "src": "assets/imgs/pinterest.svg",
+      "link": "/"
+    }
+  },
+
   "flex-layout.row#1-footer-mobile": {
     "props": {
       "paddingTop": 4,
@@ -109,8 +266,30 @@
   },
   "rich-text#footer-mobile": {
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
+      "text": "Powered By",
       "blockClass": "footer"
     }
+  },
+
+  "rich-text#payment-methods": {
+    "props": {
+      "text": "Formas de Pagamento",
+      "blockClass": ["content__footer-item-title", "content__footer-item-title-payment"]
+    }
+  },
+
+  "rich-text#secuty": {
+    "props": {
+      "text": "Segurança",
+      "blockClass": ["content__footer-item-title", "content__footer-item-title-payment"]
+    }
+  },
+
+  "rich-text#social-midia": {
+    "props": {
+      "text": "Redes Sociais",
+      "blockClass": ["content__footer-item-title", "content__footer-item-title-social-midia"]
+    }
   }
+
 }

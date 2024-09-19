@@ -1,5 +1,5 @@
 .skuSelectorContainer--quickview .skuSelectorItemImage .frameAround, .skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .container :global(.vtex-modal-layout-0-x-triggerContainer) {
@@ -19,14 +19,23 @@
 
 .nameContainer {
   justify-content: start;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 0;
 }
 
 .brandName {
-  font-weight: 600;
-  font-size: 18px;
-  color: #2E2E2E;
+  color: #000;
+  font-family: Exo;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1025px) {
+  .brandName {
+    font-size: 18px;
+  }
 }
 
 .container {
@@ -39,4 +48,45 @@
 
 .image {
   border-radius: 0.25rem;
+}
+
+.containerNormal {
+  max-height: 454px;
+}
+
+@media screen and (min-width: 1025px) {
+  .containerNormal {
+    max-height: unset;
+  }
+}
+
+.element :global(.vtex-flex-layout-0-x-flexRowContent) {
+  margin: 0;
+}
+
+.clearLink {
+  text-decoration: none;
+}
+
+
+.skuSelectorInternalBox {
+  border-radius: 100%;
+}
+
+.SKUSelectorContainer {
+  min-height: 51.16px;
+}
+
+@media screen and (min-width: 1025px) {
+  .SKUSelectorContainer {
+    min-height: 60px;
+  }
+}
+
+.frameAround {
+  border-radius: 100%;
+}
+
+.nameWrapper {
+  margin: 9px 0 5px;
 }

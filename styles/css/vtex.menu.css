@@ -1,0 +1,16 @@
+@media screen and (min-width: 1025px) {
+  .styledLinkContainer {
+    margin: 0 1rem;
+  }
+  .styledLinkContent {
+    color: #000;
+    text-align: right;
+    font-family: Exo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+}
+

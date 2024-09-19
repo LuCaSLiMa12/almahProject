@@ -1,0 +1,83 @@
+.newsletterForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1025px) {
+  .newsletterForm {
+    flex-direction: row;
+  }
+
+  .newsletterForm :global(.vtex-input-prefix__group) {
+    margin-bottom: 0 !important;
+  }
+}
+
+
+.nameInputContainer :global(.vtex-input-prefix__group),
+.emailInputContainer :global(.vtex-input-prefix__group) {
+  border-radius: 3px;
+  background: #FFF;
+  border: unset;
+}
+
+
+.nameInputContainer :global(.vtex-styleguide-9-x-input),
+.emailInputContainer :global(.vtex-styleguide-9-x-input) {
+  min-width: 232px;
+}
+
+.nameInputContainer :global(.vtex-input-prefix__group) {
+  margin-bottom: 9px;
+}
+
+@media screen and (min-width: 1025px) {
+  .emailInputContainer {
+    margin-right: 38px;
+  }
+
+  .nameInputContainer {
+    margin-right: 14px;
+  }
+
+  .emailInputContainer :global(.vtex-input-prefix__group),
+  .nameInputContainer :global(.vtex-input-prefix__group) {
+    height: 33px;
+  }
+}
+
+.emailInputContainer :global(.vtex-input-prefix__group) {
+  margin-bottom: 56px
+}
+
+.nameInputContainer :global(.vtex-styleguide-9-x-input),
+.emailInputContainer :global(.vtex-styleguide-9-x-input) {
+  text-align: center;
+  color: #828282;
+  text-align: center;
+  font-family: Barlow;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.formSubmitContainer :global(.vtex-button) {
+  border-radius: 3px;
+  background: #fff;
+  min-width: 188px;
+  color: #000;
+  text-align: center;
+  font-family: Exo;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: unset;
+}
+
+@media screen and (min-width: 1025px) {
+  .formSubmitContainer :global(.vtex-button) {
+    font-size: 18px;
+  }
+}

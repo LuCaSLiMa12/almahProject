@@ -77,3 +77,19 @@
   color: #FFFFFF;
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 }
+
+.currencyContainer--summary {
+  color: #000;
+  font-family: Exo;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1025px) {
+  .currencyContainer--summary {
+    font-size: 18px;
+  }
+}

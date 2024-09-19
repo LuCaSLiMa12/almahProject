@@ -1,0 +1,38 @@
+.profileIcon {
+  width: 17.101px !important;
+  height: 21px !important;
+  color: #000;
+}
+
+.container :global(.vtex-button__label) {
+  margin: 0 0 0 .5rem;
+  padding: 0 !important;
+}
+
+.buttonLink :global(.vtex-button) {
+  margin: 0 1.60rem 0 1rem;
+}
+
+@media screen and (min-width: 1025px) {
+  .buttonLink :global(.vtex-button) {
+    margin: 0 0 0 1.482rem;
+  }
+}
+
+.label {
+  width: 69px;
+  font-size: 0;
+  padding: 0;
+  text-align: left;
+
+}
+
+.label::after {
+  content: "ENTRAR OU CADASTRE-SE";
+  color: #000;
+  font-family: Exo;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 138.7%; 
+}

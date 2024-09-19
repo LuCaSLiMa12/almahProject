@@ -7,33 +7,10 @@
   },
   "header-layout.desktop": {
     "children": [
-      "flex-layout.row#1-desktop",
-      "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop"
     ]
   },
 
-  "flex-layout.row#1-desktop": {
-    "children": ["telemarketing"],
-    "props": {
-      "fullWidth": true
-    }
-  },
-  
-  "flex-layout.row#3-desktop": {
-    "props": {
-      "blockClass": "menu-link",
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
-    ]
-  },
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"
@@ -44,6 +21,14 @@
       "blockClass": "sticky-header"
     },
     "children": ["flex-layout.row#4-desktop"]
+  },
+  "login": {
+    "props": {
+      "showIconProfile": true,
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN"
+
+    }
   },
   "flex-layout.row#4-desktop": {
     "props": {
@@ -57,13 +42,21 @@
     "children": [
       "flex-layout.col#logo-desktop",
       "flex-layout.col#category-menu",
-      "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
+      "flex-layout.col#header-desk"
     ]
   },
+
+  "flex-layout.col#header-desk": {
+    "children": [
+      "search-bar",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "header_desk"
+    }
+  },
+
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle"
@@ -80,9 +73,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180",
-      "height": "12"
+      "url": "assets/imgs/logo-header.svg"
     }
   },
   "header-layout.mobile": {
@@ -93,14 +84,25 @@
   },
   "flex-layout.row#1-mobile": {
     "children": [
-      "drawer",
       "logo#mobile",
-      "flex-layout.col#spacer",
+      "flex-layout.row#item-mobile",
+      "search-bar"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#item-mobile": {
+    "children": [
+      "drawer",
       "login",
       "minicart.v2"
     ],
     "props": {
-      "blockClass": "main-header-mobile",
+      "blockClass": "item-mobile",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true
@@ -112,7 +114,6 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
       "menu-item#category-home",
       "menu-item#more"
     ],
@@ -125,9 +126,8 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
-      "width": "77.5",
-      "height": "27.5"
+      "url": "assets/imgs/logo-header.svg"
+
     }
   }
 }
