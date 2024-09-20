@@ -1,4 +1,43 @@
 .openIconContainer {
   height: fit-content;
   margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 17px;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.drawer {
+  background-color: #000;
+}
+
+.closeIconContainer {
+  justify-content: space-between;
+  align-items: center;
+  height: 84px;
+  padding-top: 27px;
+}
+
+.closeIconButton {
+  padding-right: 26px;
+  padding-top: 15px;
+}
+
+.closeIconContainer::before {
+  content: "Menu";
+  margin-left: 26px;
+  color: #FFF;
+  font-family: Exo;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
+.closeIconButton::after{
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none' style='&%2310;'%3E%3Cpath d='M1 1L11 11' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M1 10.5L10.5 1.5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }

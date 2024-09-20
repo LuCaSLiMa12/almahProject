@@ -114,13 +114,91 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#category-home",
-      "menu-item#more"
+      "flex-layout.row#contato",
+      "menu-item#header-1",
+      "menu-item#header-2",
+      "menu-item#header-3",
+      "menu-item#header-4",
+      "menu-item#header-5",
+      "menu-item#header-6"
     ],
     "props": {
       "orientation": "vertical"
     }
   },
+
+  "flex-layout.row#contato": {
+    "children": [
+      "flex-layout.row#contato-info",
+       "flex-layout.row#links-socil-midia-header"
+    ],
+    "props": {
+      "blockClass": "contato-header"
+    }
+  },
+
+  "flex-layout.row#links-socil-midia-header": {
+    "children": [
+      "image#social-midia-link1", 
+      "image#social-midia-link2", 
+      "image#social-midia-link3", 
+      "image#social-midia-link4"
+    ],
+    "props": {
+      "blockClass": "container__social-midia"
+    }
+  },
+
+  "image#social-midia-link1": {
+    "props": {
+      "src": "assets/imgs/pinterest-header.svg",
+      "link": "/"
+    }
+  },
+
+  "image#social-midia-link2": {
+    "props": {
+      "src": "assets/imgs/pinterest-header.svg",
+      "link": "/"
+    }
+  },
+  "image#social-midia-link3": {
+    "props": {
+      "src": "assets/imgs/pinterest-header.svg",
+      "link": "/"
+    }
+  },
+  "image#social-midia-link4": {
+    "props": {
+      "src": "assets/imgs/pinterest-header.svg",
+      "link": "/"
+    }
+  },
+
+  "flex-layout.row#contato-info": {
+    "children": [
+      "image#contato",
+      "rich-text#contato"
+    ],
+    "props": {
+      "blockClass": "contato-info"
+    }
+  },
+
+  "image#contato": {
+    "props": {
+      "src": "assets/imgs/phone.svg",
+      "maxHeight": 14
+    }
+  },
+
+  "rich-text#contato": {
+    "props": {
+      "text": "ENTRE EM CONTATO (99) 9999-9999",
+      "blockClass": "contato-menu"
+    }
+  },
+
 
   "logo#mobile": {
     "props": {

@@ -3,6 +3,11 @@
   padding: 0 0.5rem;
 }
 
+:global(.vtex-button):hover,
+:global(.vtex-button):focus {
+  background: transparent;
+}
+
 @media screen and (min-width: 40em) {
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
@@ -37,6 +42,7 @@
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
   color: #ffffff;
   font-size: 14px;
+  
 }
 
 .flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
@@ -51,10 +57,31 @@
 
 @media screen and (min-width: 1025px) {
   .flexRow--deals {
-    max-width: 986px;
+    max-width: 900px;
     margin: auto;
     padding: 25px 0px;
+  }
 
+  .flexColChild--sub-news {
+    height: auto !important;
+  }
+
+  .flexColChild--sub-news :global(.vtex-rich-text-0-x-paragraph--news_title) {
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .flexColChild--sub-news :global(.vtex-store-components-3-x-imageElement--news_imgs) {
+    height: 214px;
+  }
+
+  .flexColChild--submenu-category {
+    height: auto !important;
+    width: 25%;
+  }
+
+  .flexCol--sub-news {
+    max-width: 423px;
   }
 
 }
@@ -244,7 +271,7 @@
   
 
   .flexRowContent--mosaico-home .stretchChildrenWidth {
-    width: 24.6vw !important;
+    width: 31.9% !important;
   }
 
   .flexRowContent--mosaico-home .stretchChildrenWidth:nth-child(-n+2) {
@@ -392,4 +419,53 @@
 
 .flexRow--menu-row {
   padding: 0 1rem;
+}
+
+.flexRowContent--contato-header {
+  background: #F0F6F5;
+  padding: 19px 0 18px 26px;
+  flex-direction: column;
+}
+
+.flexRowContent--contato-header .stretchChildrenWidth {
+  width: auto !important;
+}
+
+.flexRowContent--contato-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 27px;
+}
+
+.flexRowContent--contato-info .stretchChildrenWidth {
+  width: auto !important;
+}
+
+@media screen and (min-width: 640px) {
+  .flexRowContent--item-mobile {
+    gap: 15px;
+  }
+}
+
+.flexRowContent--selector-and-remove-button {
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  justify-content: space-between;
+  padding-right: 6px;
+}
+
+.flexRowContent--price-minicart {
+  margin: 10px 0 20px;
+}
+
+.flexRow--minicart-footer {
+  box-shadow: unset;
+}
+
+.flexCol--submenu-category {
+  flex-direction: row;
+  flex-wrap: wrap;
 }

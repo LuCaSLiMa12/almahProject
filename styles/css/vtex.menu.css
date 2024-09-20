@@ -1,4 +1,8 @@
 @media screen and (min-width: 1025px) {
+  .submenu .styledLinkContainer {
+    margin: 0 1rem 0 0;
+  }
+
   .styledLinkContainer {
     margin: 0 1rem;
   }
@@ -14,3 +18,60 @@
   }
 }
 
+.menuContainerNav {
+  width: 100%;
+}
+
+:global(.vtex-store-drawer-0-x-drawerContent) .menuItem {
+  margin: 33px 0 6px;
+}
+
+:global(.vtex-store-drawer-0-x-drawerContent) .menuItem .styledLinkContent {
+  color: #FFF;
+  font-family: Exo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.menuContainer {
+  margin-bottom: 100px;
+}
+
+@media screen and (min-width: 1025px) {
+  .menuContainer {
+    margin-bottom: 0;
+  }
+  
+}
+
+.accordionIcon {
+  font-size: 0;
+}
+
+.accordionIcon::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5' height='9' viewBox='0 0 5 9' fill='none'%3E%3Cpath d='M1 1.5L4 4.5L1 8' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+@media screen and (min-width: 1025px) {
+  .submenuContainer {
+    width: 100%;
+    position: unset;
+  }
+
+  .submenuWrapper--isOpen {
+    margin: 0;
+  }
+
+  .submenu {
+    max-width: 1169px;
+  }
+
+  .submenuWrapper {
+    height: 440px;
+    width: 100vw;
+    justify-content: center;
+    padding: .75rem 2rem;
+  }
+}

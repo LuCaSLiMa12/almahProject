@@ -225,10 +225,21 @@
 .paragraph--deals {
   color: #000;
   font-family: Exo;
-  font-size: 1rem;
+  font-size: 11px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+@media screen and (min-width: 1025px) {
+  .paragraph--deals {
+    color: #000;
+    font-family: Exo;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
 }
 
 .headingLevel2--shelfTitle {
@@ -246,3 +257,29 @@
     font-size: 30px;
   }
 }
+
+.wrapper--contato-menu {
+  color: #000;
+  text-align: right;
+  font-family: Exo;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.wrapper--contato-menu .paragraph {
+  margin: 0;
+}
+
+.paragraph--title-category {
+  color: #000;
+  font-family: Exo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 7px;
+  margin-bottom: 8px;
+}
+

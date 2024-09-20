@@ -107,18 +107,60 @@
       "width": "auto"
     },
     "children": [
-      "vtex.menu@2.x:menu#category-apparel"
+      "flex-layout.col#submenu",
+      "flex-layout.col#submenu-news"
     ]
   },
+  "flex-layout.col#submenu-news": {
+    "children": [
+      "image#news-img",
+      "rich-text#news-title",
+      "rich-text#news-summary",
+      "link.product#news-header"
+    ],
+    "props": {
+      "blockClass": "sub-news"
+    }
+  },
+
+  "link.product#news-header": {
+    "props": {
+      "href": "#",
+      "label": "VER MAIS",
+      "blockClass": "news_header"
+    }
+  },
+
+  "flex-layout.col#submenu": {
+    "children": [
+      "vtex.menu@2.x:menu#category-apparel",
+      "vtex.menu@2.x:menu#category-apparel",
+      "vtex.menu@2.x:menu#category-apparel",
+      "vtex.menu@2.x:menu#category-apparel",
+      "vtex.menu@2.x:menu#category-apparel",
+      "vtex.menu@2.x:menu#category-apparel"
+    ],
+    "props": {
+      "blockClass": "submenu-category"
+    }
+  },
+
   "vtex.menu@2.x:menu#category-apparel": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
+      "rich-text#title-category",
       "menu-item#category-apparel-clothing",
       "menu-item#category-apparel-accessories",
       "menu-item#category-apparel-eyeglasses"
     ]
+  },
+  "rich-text#title-category": {
+    "props": {
+      "text": "CATEGORIA 01",
+      "blockClass": "title-category"
+    }
   },
   "menu-item#category-apparel-clothing": {
     "props": {
@@ -165,7 +207,7 @@
       }
     }
   },
-  "menu-item#category-home": {
+  "menu-item#header-1": {
     "props": {
       "id": "menu-item-category-home",
       "type": "custom",
@@ -176,10 +218,93 @@
         "href": "/home---decor/",
         "noFollow": false,
         "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
+        "text": "CATEGORIA 01"
       }
-    }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
   },
+  "menu-item#header-2": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Home & Decor",
+        "text": "CATEGORIA 02"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
+  },
+  "menu-item#header-3": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Home & Decor",
+        "text": "CATEGORIA 03"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
+  },
+  "menu-item#header-4": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Home & Decor",
+        "text": "CATEGORIA 04"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
+  },
+  "menu-item#header-5": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Home & Decor",
+        "text": "CATEGORIA 05"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
+  },
+  "menu-item#header-6": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Home & Decor",
+        "text": "CATEGORIA 06"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
+  },
+   
+
   "menu-item#more": {
     "props": {
       "id": "menu-item-custom-sale",
@@ -191,12 +316,10 @@
         "href": "#",
         "noFollow": true,
         "tagTitle": "More",
-        "text": "More"
+        "text": "CATEGORIA 02"
       }
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu#more"
-    ]
+    "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
   },
   "vtex.menu@2.x:submenu#more": {
     "props": {

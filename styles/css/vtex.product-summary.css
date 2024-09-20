@@ -57,6 +57,7 @@
 @media screen and (min-width: 1025px) {
   .containerNormal {
     max-height: unset;
+    max-width: 377px !important;
   }
 }
 
@@ -64,8 +65,13 @@
   margin: 0;
 }
 
+.element :global(.vtex-stack-layout-0-x-stackContainer) {
+  background: #F3F3F3;
+}
+
 .clearLink {
   text-decoration: none;
+  position: relative;
 }
 
 
@@ -75,6 +81,9 @@
 
 .SKUSelectorContainer {
   min-height: 51.16px;
+  position: absolute;
+  width: 100%;
+  bottom: 126px;
 }
 
 @media screen and (min-width: 1025px) {
@@ -89,4 +98,15 @@
 
 .nameWrapper {
   margin: 9px 0 5px;
+}
+
+.imageNormal {
+  mix-blend-mode: multiply;
+  max-height: 150px !important;
+}
+
+@media screen and (min-width: 1025px) {
+  .imageNormal {
+    max-height: 296px !important;
+  }
 }

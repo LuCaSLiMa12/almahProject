@@ -1,0 +1,46 @@
+.summaryItemLabel {
+  color: #000;
+  font-family: Exo;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+} 
+
+.summaryItemLabel::after {
+  content: ":";
+}
+
+.price {
+  color: #FFDB00;
+  font-family: Exo;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@media screen and (min-width: 1025px) {
+  .price {
+    color: #000;
+  }
+}
+
+.summarySmallDisclaimer {
+  display: none;
+}
+
+.summarySmallContent .summaryItemContainer:last-child {
+  display: none;
+}
+
+.summaryItemPrice {
+  text-align: unset;
+}
+
+.summaryItemContainer {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 23px;
+}
+

@@ -226,7 +226,7 @@
         "href": "/clothing/d",
         "noFollow": true,
         "tagTitle": "Clothing",
-        "text": "Clothing"
+        "text": "Atendimento"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
@@ -252,7 +252,7 @@
     "props": {
       "itemProps": {
         "tagTitle": "Decoration",
-        "text": "Decoration"
+        "text": "Serviços Online"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu.accordion#decoration"]
@@ -276,7 +276,7 @@
     "props": {
       "itemProps": {
         "tagTitle": "Sale",
-        "text": "Sale"
+        "text": "Segurança"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu.accordion#sale"]

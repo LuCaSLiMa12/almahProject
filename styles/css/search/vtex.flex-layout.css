@@ -33,3 +33,10 @@
 .flexColChild--productRating {
   height: auto !important;
 }
+
+.flexCol--productRating {
+  position: absolute;
+  top: 14px;
+  left: -14px;
+  z-index: 1;
+}
